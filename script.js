@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         updateWeatherInfo(data);
       })
       .catch((error) => {
+        alert("Ma'lumot topilmadi!");
         console.error(
           "Ob-havo ma'lumotlarini olishda xatolik yuz berdi:",
           error
