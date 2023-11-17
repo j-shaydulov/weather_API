@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="left_place">
+    <div class="weather_top">
+      <img src="img/logo.svg" alt="logo" />
+    </div>
+    <div class="temperature">
+      <h2 class="gradus"></h2>
+      <div class="place">
+        <h2 id="city"></h2>
+        <p id="date"></p>
+      </div>
+      <img id="weather-icon" src="" alt="" />
+    </div>
+  </div>
+  <div class="weather_info_place">
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="Search Location...">
+      <button type="submit" id="search-button"><img src="img/fa_search.svg" alt="fa_search" /></button>
+    </form>
+    <p class="detail">Weather Details...</p>
+    <h2 id="weather-description" class="info"></h2>
+    <div class="weather_info_cards">
+        <div class="weather_info">
+          <h2>Temp max</h2>
+          <div class="info_right">
+              <p id="temp-max"></p>
+              <img src="img/Vector.svg" alt="vector" />
+          </div>
+        </div>
+        <div class="weather_info">
+            <h2>Temp min</h2>
+            <div class="info_right">
+                <p id="temp-min"></p>
+                <img src="img/Vector_blue.svg" alt="vector" />
+            </div>
+        </div>
+        <div class="weather_info">
+            <h2>Humidity</h2>
+            <div class="info_right">
+                <p id="humidity"></p>
+                <img src="img/outline_tomchi.svg" alt="tomchi" />
+            </div>
+        </div>
+        <div class="weather_info">
+            <h2>Cloudy</h2>
+            <div class="info_right">
+                <p id="cloudy"></p>
+                <img src="img/outline_bulut.svg" alt="bulut" />
+            </div>
+        </div>
+        <div class="weather_info">
+            <h2>Wind</h2>
+            <div class="info_right">
+                <p id="wind"></p>
+                <img src="img/outline_shamol.svg" alt="shamol" />
+            </div>
+        </div>
+        <!-- Qolgan ma'lumotlar uchun o'zgartirishlar qo'shing -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+          
+          
+          

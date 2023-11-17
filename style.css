@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* body{
+    
+} */
+
+body{
+    background-image: url(img/bg-weatherBackground_.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_place{
+    margin-left: 11.7rem;
+}
+
+.weather_top img{
+    margin-top: 3.7rem;
+}
+
+.weather_info_place{
+    padding-right: 13.7rem;
+    padding-left: 3.5rem;
+    padding-top: 4.9rem;
+    color: #fff;
+    border-left: 5px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(9.5px);
+}
+
+form{
+    border-bottom: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4.1rem;
+    padding-bottom: 13px;
+}
+
+input{
+    background: none;
+    border: none;
+    outline: none;
+    width: 32.6rem;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+}
+
+input::placeholder{
+    color: rgba(255, 255, 255, 0.70);
+}
+
+button{
+    background: none;
+    border: none;
+    margin-right: 1.7rem;
+}
+
+.detail{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 5.2rem;
+}
+
+.info{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.weather_info_cards{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-bottom: 8.6rem;
+    border-bottom: 2px solid white;
+}
+
+.weather_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather_info h2{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.info_right{
+    display: flex;
+}
+
+.info_right p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.info_right img{
+    margin-left: 2rem;
+}
+
+.temperature{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-top: 370px;
+}
+
+#weather-icon{
+    height: 170px;
+}
+
+.gradus{
+    font-size: 143px;
+    font-weight: 400;
+    letter-spacing: -11.44px;
+    margin-right: 10px;
+}
+
+.place{
+    margin-right: 28px;
+    display: grid;
+    align-items: center;
+}
+
+.place h2{
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.place p{
+    font-size: 18px;
+    font-weight: 400;
+}
