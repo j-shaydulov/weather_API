@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //   });
 
   searchForm.addEventListener("submit", function (e) {
-    e.preventDefault(); // Formaning yuborishini oldini olish
+    e.preventDefault();
 
     const cityName = searchInput.value;
     getWeatherInfo(cityName);
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function updateWeatherInfo(data) {
-    const maxTemperature = Math.round(data.main.temp_max - 273.15); // Kelvin dan Celsius ga o'tkazish
+    const maxTemperature = Math.round(data.main.temp_max - 273.15);
     const minTemperature = Math.round(data.main.temp_min - 273.15);
     const humidity = data.main.humidity;
     const cloudy = data.clouds.all;
