@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const searchForm = document.getElementById("search-form");
   const searchInput = document.getElementById("search-input");
   const searchButton = document.getElementById("search-button");
+  const gradusElement = document.getElementById("gradus");
   const cityElement = document.getElementById("city");
   const dateElement = document.getElementById("date");
   const weatherIconElement = document.getElementById("weather-icon");
@@ -50,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function updateWeatherInfo(data) {
+    const currentTemperature = Math.round(data.main.temp - 273.15);
     const maxTemperature = Math.round(data.main.temp_max - 273.15);
     const minTemperature = Math.round(data.main.temp_min - 273.15);
     const humidity = data.main.humidity;
@@ -58,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const weatherDescription = data.weather[0].description;
     const iconCode = data.weather[0].icon;
 
+    gradusElement.textContent = `${currentTemperature}°`;
     cityElement.textContent = data.name;
     dateElement.textContent = getCurrentDateTime();
     weatherIconElement.src = `https://openweathermap.org/img/w/${iconCode}.png`;
